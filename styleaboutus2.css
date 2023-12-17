@@ -1,0 +1,48 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+body
+{
+background-color:lightyellow;
+}
+h1
+{
+font-size:30px;
+text-align:center;
+}
+h2
+{
+font-size:29px;
+text-align:center;
+}
+#dine
+{
+text-align:center;
+font-size:25px;
+}
+#book
+{
+text-align:center;
+font-size:25px;
+}
+#door
+{
+text-align:center;
+font-size:25px;
+}
+#menu
+{
+text-align:center;
+font-size:25px;
+}
+#address
+{
+font-size:15px;
+}
+#contact
+{
+font-size:15px;
+}

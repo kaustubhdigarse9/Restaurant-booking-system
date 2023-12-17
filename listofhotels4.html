@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        text-align: center;
+        color: green;
+        padding: 20px;
+      }
+
+      .items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 30px 20px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+      }
+
+      .items img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: 0.2s ease;
+      }
+
+      .item img:hover {
+        transform: scale(1.04);
+      }
+      .item button {
+        padding: 5px 30px;
+        border: none;
+        outline: none;
+        background: green;
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 20px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .item button:hover {
+        transform: scale(1.08);
+      }
+
+      .sun {
+        color: grey;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book your resturant</title>
+  </head>
+  <body>
+    <h1>Select your European Restaurant</h1>
+    <section class="items">
+      <div class="item">
+        <img src="img/londontaxi.jpg" />
+        <h2>London Taxi</h2>
+        <h4 class="sun">Lower Parel, South Mumbai</h4>
+        <h4 class="sun">
+          Cost for two:₹1200 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; ⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/London+Taxi/@19.0036586,72.825731,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7ce9332d5a015:0xe9b3d6fc6f72abe4!8m2!3d19.0036586!4d72.8279197"
+            >📍 see location</a
+          >
+        </h4>
+
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/caravan.jpg" />
+        <h2>The Caravan Menu</h2>
+        <h4 class="sun">Thane West</h4>
+        <h4 class="sun">
+          Cost for two:₹ 2600 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp;⭐⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/The+Caravan+Menu/@19.1951688,72.9596589,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7b91a69b382e1:0x84dddec47366e026!8m2!3d19.1952086!4d72.9618388"
+            >📍 see location</a
+          >
+        </h4>
+
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/olive.jpg" />
+        <h2>Olive Bar & Kitchen</h2>
+        <h4 class="sun">Khar,Western Suburbs</h4>
+        <h4 class="sun">
+          Cost for two:₹ 2700 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp;⭐⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/Olive+Bar+and+Kitchen/@19.0718273,72.8230349,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7c972e372dc89:0xa9a41da596e8190c!8m2!3d19.0718273!4d72.8252236"
+            >📍 see location</a
+          >
+        </h4>
+
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/goose.jpg" />
+        <h2>The Goose & Gridiron</h2>
+        <h4 class="sun">Fort, South Mumbai</h4>
+        <h4 class="sun">
+          Cost for two:₹1200 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; ⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/The+Goose+and+Gridiron/@18.9381218,72.8311321,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7d1deb108bf05:0xc7c104a5fdf608ee!8m2!3d18.9381218!4d72.8333208"
+            >📍 see location</a
+          >
+        </h4>
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/donna.jpg" />
+        <h2>Donna Deli</h2>
+        <h4 class="sun">Bandra West, Western Suburbs</h4>
+        <h4 class="sun">
+          Cost for two:₹1400 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; ⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/Donna+Deli/@19.0621798,72.8352089,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7c92f56907b43:0xaac10c11e57e01b8!8m2!3d19.0621798!4d72.8373976"
+            >📍 see location</a
+          >
+        </h4>
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/society2.jpg" />
+        <h2>The Society - Fine Dine Restaurant</h2>
+        <h4 class="sun">The Ambassador Hotel, Mumbai</h4>
+        <h4 class="sun">
+          Cost for two:₹ 1800 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp;⭐⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/The+Society/@18.9338073,72.82266,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7d1e6fe6a3b6d:0xc75f1b5bc472d7ad!8m2!3d18.9336515!4d72.8248196"
+            >📍 see location</a
+          >
+        </h4>
+
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+    </section>
+  </body>
+</html>

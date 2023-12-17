@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        text-align: center;
+        color: green;
+        padding: 20px;
+      }
+
+      .items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 30px 20px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+      }
+
+      .items img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: 0.2s ease;
+      }
+
+      .item img:hover {
+        transform: scale(1.04);
+      }
+      .item button {
+        padding: 5px 30px;
+        border: none;
+        outline: none;
+        background: green;
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 20px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .item button:hover {
+        transform: scale(1.08);
+      }
+
+      .sun {
+        color: grey;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book your resturant</title>
+  </head>
+  <body>
+    <h1>Select your South-Indian Restaurant</h1>
+    <section class="items">
+      <div class="item">
+        <img src="img/thang.jpg" />
+        <h2>Thangabali</h2>
+        <h4 class="sun">Mahim, South Mumbai</h4>
+        <h4 class="sun">
+          Cost for two:₹800 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; ⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/Thangabali+-+Mahim/@19.0315715,72.8392019,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7ced242e7b715:0x9513cf16dac13e2!8m2!3d19.0315805!4d72.8413918"
+            >📍 see location</a
+          >
+        </h4>
+
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/madras.jpg" />
+        <h2>Cafe Madras</h2>
+        <h4 class="sun">Matunga East,Mumbai</h4>
+        <h4 class="sun">
+          Cost for two:₹ 250 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp;⭐⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/Cafe+Madras%C2%AE%EF%B8%8F/@19.0276203,72.8528528,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7cf28fa60319d:0xf8101e76f66ded35!8m2!3d19.0276142!4d72.8550464"
+            >📍 see location</a
+          >
+        </h4>
+
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/orchid.jpg" />
+        <h2>South of Vindhyas</h2>
+        <h4 class="sun">The Orchid,Mumbai</h4>
+        <h4 class="sun">
+          Cost for two:₹ 2500 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp;⭐⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/The+Orchid+Hotel+Mumbai+Vile+Parle/@19.0594327,72.8216158,13z/data=!4m12!1m2!2m1!1sSouth+of+Vindhyas+The+Orchid,Mumbai!3m8!1s0x3be7c84dab4f05f3:0xa340672d24c78185!5m2!4m1!1i2!8m2!3d19.0971453!4d72.8546963!15sCiNTb3V0aCBvZiBWaW5kaHlhcyBUaGUgT3JjaGlkLE11bWJhaSIDiAEBWiUiI3NvdXRoIG9mIHZpbmRoeWFzIHRoZSBvcmNoaWQgbXVtYmFpkgEFaG90ZWyaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUmhjSEJYTVRGblJSQUI"
+            >📍 see location</a
+          >
+        </h4>
+
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/sambar.jpg" />
+        <h2>SamBar Pub & Kitchen</h2>
+        <h4 class="sun">Khar,Western Suburbs</h4>
+        <h4 class="sun">
+          Cost for two:₹1250 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; ⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/SamBar+Pub+And+Kitchen/@19.072071,72.8370443,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7c90f8392ed11:0xcbf67d5607218a2b!8m2!3d19.072071!4d72.839233"
+            >📍 see location</a
+          >
+        </h4>
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/aavkay2.jpg" />
+        <h2>Aavakay</h2>
+        <h4 class="sun">Kandivali East, Western Suburbs</h4>
+        <h4 class="sun">
+          Cost for two:₹1000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; ⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/Aavakaya+-+The+Andhra+Kitchen+%26+Bar/@19.2092195,72.836268,14z/data=!4m9!1m2!2m1!1sAavakay+Kandivali+East,+Western+Suburbs!3m5!1s0x3be7b70a5c45aacb:0x84f8d952e241ef73!8m2!3d19.2120643!4d72.8712557!15sCidBYXZha2F5IEthbmRpdmFsaSBFYXN0LCBXZXN0ZXJuIFN1YnVyYnNaKCImYWF2YWtheSBrYW5kaXZhbGkgZWFzdCB3ZXN0ZXJuIHN1YnVyYnOSARFhbmRocmFfcmVzdGF1cmFudJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSNWVEaHhSVWgzRUFF"
+            >📍 see location</a
+          >
+        </h4>
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/dakshin.jpg" />
+        <h2>Dakshin Culture Curry</h2>
+        <h4 class="sun">Mahim,South Mumbai</h4>
+        <h4 class="sun">
+          Cost for two:₹ 1200 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp;⭐⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/Dakshin+Culture+Curry+Speciality+South+Indian+Restobar/@19.0318908,72.8379668,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7cecd6ca83131:0xfb25f4f5df9d929d!8m2!3d19.0318908!4d72.8401555"
+            >📍 see location</a
+          >
+        </h4>
+
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+    </section>
+  </body>
+</html>

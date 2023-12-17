@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        text-align: center;
+        color: green;
+        padding: 20px;
+      }
+
+      .items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 30px 20px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+      }
+
+      .items img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: 0.2s ease;
+      }
+
+      .item img:hover {
+        transform: scale(1.04);
+      }
+      .item button {
+        padding: 5px 30px;
+        border: none;
+        outline: none;
+        background: green;
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 20px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .item button:hover {
+        transform: scale(1.08);
+      }
+
+      .sun {
+        color: grey;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book your resturant</title>
+  </head>
+  <body>
+    <h1>Select your Pan-Asian Restaurant</h1>
+    <section class="items">
+      <div class="item">
+        <img src="img/foobkc.jpg" />
+        <h2>Food BKC</h2>
+        <h4 class="sun">Jio world drive,BKC</h4>
+        <h4 class="sun">
+          Cost for two:₹1500 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; ⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/Foo+Jio+World+Drive/@19.0625661,72.8516259,15z/data=!4m9!1m2!2m1!1sFood+BKC+Jio+world+drive,BKC!3m5!1s0x3be7c95a96b73a07:0xf4d4919f042ba798!8m2!3d19.0535294!4d72.8513144!15sChxGb29kIEJLQyBKaW8gd29ybGQgZHJpdmUsQktDWh4iHGZvb2QgYmtjIGppbyB3b3JsZCBkcml2ZSBia2OSARBhc2lhbl9yZXN0YXVyYW50"
+            >📍 see location</a
+          >
+        </h4>
+
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/chinchin.jpg" />
+        <h2>Chin Chin Chu</h2>
+        <h4 class="sun">Lower parel,south mumbai</h4>
+        <h4 class="sun">
+          Cost for two:₹ 1200 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp;⭐⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/Chin+Chin+Chu,+Lower+Parel/@18.9927136,72.8198343,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7cf3fa178b29d:0x39f83fe0776bc896!8m2!3d18.9927136!4d72.822023"
+            >📍 see location</a
+          >
+        </h4>
+
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/fooasian.jpg" />
+        <h2>F00-Asian Tapas</h2>
+        <h4 class="sun">Palladium Mall,Lower Parel</h4>
+        <h4 class="sun">
+          Cost for two:₹ 1800 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp;⭐⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/Foo+Phoenix+Palladium/@18.9431545,72.8268799,12z/data=!3m1!5s0x3be7ce8c6f9f2157:0x3fd1380718b3d820!4m9!1m2!2m1!1sF00-Asian+Tapas+Palladium+Mall,Lower+Parel!3m5!1s0x3be7cf41bfd367bd:0x4d6ed4c635c86257!8m2!3d18.9947348!4d72.8245215!15sCipGMDAtQXNpYW4gVGFwYXMgUGFsbGFkaXVtIE1hbGwsTG93ZXIgUGFyZWxaLCIqZjAwIGFzaWFuIHRhcGFzIHBhbGxhZGl1bSBtYWxsIGxvd2VyIHBhcmVskgEUcGFuX2FzaWFuX3Jlc3RhdXJhbnSaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTXlOSEI2TjFoM0VBRQ"
+            >📍 see location</a
+          >
+        </h4>
+
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/diablo.jpg" />
+        <h2>Diablo</h2>
+        <h4 class="sun">Lower Parel,South mumbai</h4>
+        <h4 class="sun">
+          Cost for two:₹1500 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; ⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/Diablo+Mumbai/@19.0061341,72.8252446,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7ce94aef6cb1f:0x6c3424e07ab6a91e!8m2!3d19.0061341!4d72.8274333"
+            >📍 see location</a
+          >
+        </h4>
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/supper.jpg" />
+        <h2>Yazu-Pan Asian Supper Club</h2>
+        <h4 class="sun">Oshiwara</h4>
+        <h4 class="sun">
+          Cost for two:₹1500 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; ⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/Yazu+-+Pan+Asian+Supper+Club/@19.141429,72.8277138,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7b7783b33bcef:0x78601c998d77d384!8m2!3d19.141429!4d72.8299025"
+            >📍 see location</a
+          >
+        </h4>
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/zenmai.jpg" />
+        <h2>Zenmai</h2>
+        <h4 class="sun">SantaCruz,Western Suburbs</h4>
+        <h4 class="sun">
+          Cost for two:₹ 2400 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp;⭐⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/Zenmai/@19.082873,72.8256649,15z/data=!4m9!1m2!2m1!1sZenmai+SantaCruz,Western+Suburbs!3m5!1s0x3be7c995dbfca7bf:0xaf91633456f5a961!8m2!3d19.085446!4d72.8348851!15sCiBaZW5tYWkgU2FudGFDcnV6LFdlc3Rlcm4gU3VidXJic1oiIiB6ZW5tYWkgc2FudGFjcnV6IHdlc3Rlcm4gc3VidXJic5IBEGFzaWFuX3Jlc3RhdXJhbnSaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTjVkalZIV0VWQkVBRQ"
+            >📍 see location</a
+          >
+        </h4>
+
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+    </section>
+  </body>
+</html>

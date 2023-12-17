@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        text-align: center;
+        color: green;
+        padding: 20px;
+      }
+
+      .items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 30px 20px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+      }
+
+      .items img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: 0.2s ease;
+      }
+
+      .item img:hover {
+        transform: scale(1.04);
+      }
+      .item button {
+        padding: 5px 30px;
+        border: none;
+        outline: none;
+        background: green;
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 20px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .item button:hover {
+        transform: scale(1.08);
+      }
+
+      .sun {
+        color: grey;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book your resturant</title>
+  </head>
+  <body>
+    <h1>Select your Chinese Restaurant</h1>
+    <section class="items">
+      <div class="item">
+        <img src="img/mamagamato.jpg" />
+        <h2>Mamagoto</h2>
+        <h4 class="sun">Hill Road, Bandra West, Western Suburbs</h4>
+        <h4 class="sun">
+          Cost for two:₹1500 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; ⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/Mamagoto/@19.0550692,72.8262122,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7c93f83f5a1ef:0x9945a7f7feb5fafa!8m2!3d19.0550062!4d72.8283982"
+            >📍 see location</a
+          >
+        </h4>
+
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/sanqi2.jpg" />
+        <h2>San-Qi</h2>
+        <h4 class="sun">Four Seasons Hotel, Worli</h4>
+        <h4 class="sun">
+          Cost for two:₹ 3800 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp;⭐⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/San:Qi/@18.9940695,72.8179516,17z/data=!4m9!1m2!2m1!1sSan-Qi+Four+Seasons+Hotel,+Worli!3m5!1s0x3be7ce8fb09e4355:0xf63ae17c93780cbc!8m2!3d18.9942979!4d72.8203002!15sCiBTYW4tUWkgRm91ciBTZWFzb25zIEhvdGVsLCBXb3JsaSIDiAEBWiEiH3NhbiBxaSBmb3VyIHNlYXNvbnMgaG90ZWwgd29ybGmSARRwYW5fYXNpYW5fcmVzdGF1cmFudA"
+            >📍 see location</a
+          >
+        </h4>
+
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/chinahouse.jpg" />
+        <h2>China House Restaurant</h2>
+        <h4 class="sun">Grand Hyatt Mumbai Hotel & Residences</h4>
+        <h4 class="sun">
+          Cost for two:₹ 3500 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp;⭐⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/China+House+Restaurant/@19.0776454,72.8489953,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7c8fe202a2443:0x6ee359458d28ed34!8m2!3d19.0776454!4d72.851184"
+            >📍 see location</a
+          >
+        </h4>
+
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/oblossom.jpg" />
+        <h2>The Oriental Blossom</h2>
+        <h4 class="sun">Hotel Marine Plaza, Mumbai</h4>
+        <h4 class="sun">
+          Cost for two:₹2200 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; ⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/Hotel+Marine+Plaza/@18.931191,72.8209843,17z/data=!3m1!4b1!4m8!3m7!1s0x3be7d1e617455555:0x750dc9ce2e94c147!5m2!4m1!1i2!8m2!3d18.931191!4d72.823173"
+            >📍 see location</a
+          >
+        </h4>
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/chinaming.jpg" />
+        <h2>China Ming</h2>
+        <h4 class="sun">The Hub Mall,Goregaon East</h4>
+        <h4 class="sun">
+          Cost for two:₹1500 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; ⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/China+Ming/@19.1547995,72.8540671,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7b7b5cb963cab:0xd82a105771b6a95b!8m2!3d19.1547995!4d72.8562558"
+            >📍 see location</a
+          >
+        </h4>
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/koko.jpg" />
+        <h2>KOKO</h2>
+        <h4 class="sun">Lower Parel,South Mumbai</h4>
+        <h4 class="sun">
+          Cost for two:₹ 3000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp;⭐⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/KOKO/@19.0029776,72.8258729,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7ceecd4d810c3:0x4baf5e380e9ebd0b!8m2!3d19.0029776!4d72.8280616"
+            >📍 see location</a
+          >
+        </h4>
+
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+    </section>
+  </body>
+</html>

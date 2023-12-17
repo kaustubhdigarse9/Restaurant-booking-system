@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+      }
+
+      h1 .kuko {
+        text-align: center;
+        color: green;
+        padding: 20px;
+        background-color: white;
+      }
+
+      .items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 30px 20px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+      }
+
+      .items img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: 0.2s ease;
+      }
+
+      .item img:hover {
+        transform: scale(1.04);
+      }
+      .item button {
+        padding: 5px 30px;
+        border: none;
+        outline: none;
+        background: green;
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 20px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .item button:hover {
+        transform: scale(1.08);
+      }
+
+      .sun {
+        color: grey;
+      }
+
+      @media screen and (max-width: 1000px) {
+        .items {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .items {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book your resturant</title>
+  </head>
+  <body>
+    <h1>Select your North Indian Restaurant</h1>
+    <section class="items">
+      <div class="item">
+        <img src="img/banjara.jpg" />
+        <h2>Banjara</h2>
+        <h4 class="sun">Goldflinch Hotel,Mumbai</h4>
+        <h4 class="sun">
+          Cost for two:₹1500 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; ⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/Banjara+Mumbai/@19.1196947,72.8679601,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7c8234592436d:0xbd683de57cf9ee02!8m2!3d19.1196947!4d72.8701488"
+            >📍 see location</a
+          >
+        </h4>
+
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/easyplate.jpg" />
+        <h2>The Earth Plate - Global Cuisine</h2>
+        <h4 class="sun">Sahara Star, Mumbai</h4>
+        <h4 class="sun">
+          Cost for two:₹ 3000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp;⭐⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/The+Earth+Plate/@19.095616,72.8518343,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7c852830023b1:0x8e730e970d732319!8m2!3d19.095616!4d72.854023"
+            >📍 see location</a
+          >
+        </h4>
+
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/lotuscafe.jpg" />
+        <h2>Lotus Cafe</h2>
+        <h4 class="sun">JW Marriott Mumbai Juhu</h4>
+        <h4 class="sun">
+          Cost for two:₹ 2800 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp;⭐⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/Lotus+Cafe/@19.1019437,72.82388,17z/data=!3m1!5s0x3be7c99514c71903:0xb8377834b642183b!4m9!1m2!2m1!1slotus+cafe+jw+marriott!3m5!1s0x3be7c936896f55bd:0xf340c3b4e1d806f1!8m2!3d19.102037!4d72.825914!15sChZsb3R1cyBjYWZlIGp3IG1hcnJpb3R0IgOIAQFaGCIWbG90dXMgY2FmZSBqdyBtYXJyaW90dJIBCnJlc3RhdXJhbnSaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTlBlbkl5YUZoQkVBRQ"
+            >📍 see location</a
+          >
+        </h4>
+
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/ishaara2.jpg" />
+        <h2>Ishaara</h2>
+        <h4 class="sun">Lower Parel,South Mumbai</h4>
+        <h4 class="sun">
+          Cost for two:₹1400 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; ⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/Ishaara/@18.9939991,72.8222243,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7cf6b452ba205:0xff8306c139296bdc!8m2!3d18.9939991!4d72.824413"
+            >📍 see location</a
+          >
+        </h4>
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/Peshwari.png" />
+        <h2>Peshawri</h2>
+        <h4 class="sun">ITC Maratha,Mumbai</h4>
+        <h4 class="sun">
+          Cost for two:₹1600 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; ⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/Peshawri+-+ITC+Maratha/@19.1038215,72.8676494,17z/data=!3m1!4b1!4m8!3m7!1s0x3be7c8412fca792f:0x880d6dddac8a8ba8!5m2!4m1!1i2!8m2!3d19.1038215!4d72.8698381"
+            >📍 see location</a
+          >
+        </h4>
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+
+      <div class="item">
+        <img src="img/bayview.jpg" />
+        <h2>The Bayview</h2>
+        <h4 class="sun">Hotel Marine Plaza,Mumbai</h4>
+        <h4 class="sun">
+          Cost for two:₹ 2500 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp;⭐⭐⭐⭐⭐
+        </h4>
+
+        <h4>
+          <a
+            href="https://www.google.com/maps/place/The+Bay+View/@18.9250305,72.8230946,16z/data=!4m9!1m2!2m1!1sbayview+hotel+mumbai!3m5!1s0x3be7ce1e8741d455:0xbe039e3af7a9bf98!8m2!3d18.9312832!4d72.8230755!15sChRiYXl2aWV3IGhvdGVsIG11bWJhaVoWIhRiYXl2aWV3IGhvdGVsIG11bWJhaZIBFmZpbmVfZGluaW5nX3Jlc3RhdXJhbnSaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTkhjRTF5V1dSM0VBRQ"
+            >📍 see location</a
+          >
+        </h4>
+
+        <button onclick="window.location.href = 'pay/ruby.php';">
+          Book a table
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
